@@ -10,6 +10,7 @@
             border: 3px double rgb(238, 243, 188);
             outline: 3px double rgb(240, 245, 195);
             border-radius: 20%;
+            border-bottom: none;
             margin: 5%;
             box-shadow: 0px 0px 40px rgb(8, 8, 8);
             max-height: 80vh;
@@ -35,8 +36,8 @@
             margin: 0 auto;
             padding: 10px;
             border-radius: 10%;
+            border: none;
             box-shadow: 5px 5px 50px black, 0px 0px 10px whitesmoke, 0px 0px 150px rgb(5, 5, 5);
-            min-height: 65vh;
             z-index: 0;
         }
         
@@ -49,7 +50,7 @@
         p {
             text-align: center;
             font-style: italic;
-            font-size: 20px;
+            font-size: 1.2em;
             font-weight: 900;
         }
         
@@ -74,7 +75,7 @@
         
         button {
             font-weight: 900;
-            font-size: 10px;
+            font-size: 0.8em;
             margin: 10px;
             border: none;
             padding: 3px;
@@ -87,12 +88,12 @@
         }
         
         #delete {
-            background-color: rgb(88, 2, 38);
+            background-color: rgb(120, 2, 2);
             color: rgb(172, 169, 169);
         }
         
         #edit {
-            background-color: gray;
+            background-color: rgb(186, 180, 180);
         }
         
         .done:hover,
@@ -112,7 +113,7 @@
         
         #logo-div p,
         #logo-div1 p {
-            background-color: rgb(185, 81, 81);
+            background-color: rgb(147, 68, 68);
             color: whitesmoke;
             width: 20%;
             margin: 0 auto;
@@ -138,6 +139,12 @@
             z-index: -1;
             opacity: 0.3;
         }
+
+        #container{
+            background-color: rgb(64, 77, 71);
+            color: rgb(217, 210, 141);
+            line-height: 100%;
+        }
     </style>
 </head>
 
@@ -154,7 +161,7 @@
             <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
                 <input type="text" id="add-name" placeholder="New activity">
                 <input type="submit" value="Add">
-            </form>
+            </form
         </div>
 
         <div id="spoiler" role="aria-hidden">
@@ -171,9 +178,9 @@
             <div id="logo-div1"></div>
 
             <tr>
-                <th>Name of activity</th>
+                <th>Name of activities</th>
             </tr>
-            <tbody id="countries">
+            <tbody id="container">
             </tbody>
         </table>
     </section>
@@ -183,9 +190,9 @@
     <script>
         var app = new function() {
 
-            this.el = document.getElementById('countries');
+            this.el = document.getElementById('container');
 
-            this.activities = ['Open App', 'Add Activity', 'Read Scheduled Activity', 'Edit/Update Activity', 'Delete Activity', 'Track Your Progress', 'To-do App At Your Convinience', 'Be Productive!!!'];
+            this.activities = ['Open App', 'Add Activity', 'Read Scheduled Activity', 'Edit/Update Activity', 'Delete Activity', 'Track Your Progress', 'To-do App ', 'Be Productive!'];
 
             this.Count = function(data) {
                 var el = document.getElementById('counter');
