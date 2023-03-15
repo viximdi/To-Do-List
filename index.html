@@ -8,28 +8,18 @@
         body {
             background-color: rgb(64, 75, 71);
             border: 3px double rgb(238, 243, 188);
+            outline: 3px double rgb(240, 245, 195);
             border-radius: 20%;
             border-bottom: none;
             margin: 5%;
             box-shadow: 0px 0px 40px rgb(8, 8, 8);
             max-height: 80vh;
         }
-
-        #add-name{
-            width: 300px;
-            max-width: 70%;
-            height: 1.5rem;
-            padding: 10px;
-        }
         
         input[type='submit'],
         button,
         [aria-label] {
             cursor: pointer;
-            background-color: rgb(234, 219, 231);
-            font-weight: 900;
-            color: rgb(49, 110, 90);
-            border: 2px solid rgb(41, 88, 64);
         }
         
         #spoiler {
@@ -43,14 +33,12 @@
             position: relative;
             width: 80%;
             max-width: 700px;
-            min-height: 60vh;
             margin: 0 auto;
             padding: 10px;
             border-radius: 10%;
             border: none;
             box-shadow: 5px 5px 50px black, 0px 0px 10px whitesmoke, 0px 0px 150px rgb(5, 5, 5);
             z-index: 0;
-            
         }
         
         div {
@@ -67,10 +55,9 @@
         }
         
         table {
-            width: 100%;
             margin: 0 auto;
-            font-weight: 900;
-            font-size: 1rem;
+            font-weight: 500;
+            font-size: 18px;
             z-index: 1;
         }
         
@@ -95,6 +82,10 @@
             border-radius: 10%;
         }
         
+        .done {
+            background-color: rgb(21, 58, 73);
+            color: rgb(136, 132, 132);
+        }
         
         #delete {
             background-color: rgb(120, 2, 2);
@@ -103,7 +94,6 @@
         
         #edit {
             background-color: rgb(186, 180, 180);
-            color: black;
         }
         
         .done:hover,
@@ -140,9 +130,9 @@
         #logo-div1 {
             background-color: rgb(3, 49, 51);
             position: absolute;
-            width: 90%;
-            height: 80%;
-            top: 10%;
+            width: 50%;
+            height: 40%;
+            top: 30%;
             border-bottom-left-radius: 100%;
             border-top-right-radius: 100%;
             box-shadow: 0px 100px 5px rgb(10, 1, 59), 100px 0px 5px rgb(112, 4, 40);
@@ -153,8 +143,7 @@
         #container{
             background-color: rgb(64, 77, 71);
             color: rgb(217, 210, 141);
-            width: 100%;
-            min-height: 50vh;
+            line-height: 100%;
         }
     </style>
 </head>
